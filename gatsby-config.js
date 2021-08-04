@@ -1,13 +1,15 @@
+require('dotenv').config();
+
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
+    siteUrl: "https://stephrinehart.com",
     title: "stephrinehart-simple",
   },
   plugins: [
     {
       resolve: "gatsby-source-datocms",
       options: {
-        apiToken: "b174b4af8b4fe53cebe99a6a06a28",
+        apiToken: process.env.DATO_ACCESS_TOKEN,
       },
     },
     "gatsby-plugin-sass",
