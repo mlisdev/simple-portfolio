@@ -8,9 +8,9 @@ export default function Layout({ pageMeta, children }) {
         <>
         <div className="main">
           <Navbar />
-          {/* <Content> */}
+          <Content>
             {children}
-          {/* </Content> */}
+          </Content>
         </div>
         </>
     )
