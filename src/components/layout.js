@@ -6,7 +6,7 @@ import "./layout.scss";
 export default function Layout({ pageMeta, children }) {
     return (
         <>
-        <div className="main" id="background">
+        <div className="main">
           <Sidebar />
           <Content>
             {children}

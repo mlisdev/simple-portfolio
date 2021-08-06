@@ -1,22 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "gatsby"; 
-import "./sidebar.scss"; 
+import "./sidebar.scss";
+import { IdentificationBadge, Lightning, Suitcase, Laptop, HouseLine } from "phosphor-react";
 
-export default function Sidebar({ data }) {
+function Sidebar() {
     return (
-            <div className="sidebar">
-                <div className="vertical-line1"></div>
-                <div className="nav">
+        <div
+            className="sidebar"
+            id="sidebar"
+            >
+                <div className="nav" id="nav">
                 <ul>
-                    <li><Link to="#about">About</Link></li>
-                    <li><Link to="#skills">Skills</Link></li>
-                    <li><Link to="#work">Work</Link></li>
-                    <li><Link to="http://blog.stephrinehart.com">Blog</Link></li>
-                    <li><Link to="#">Home</Link></li>
+                    <li><IdentificationBadge color="#ed825f" size={28} className="icon"/> <Link to="#about">About</Link></li>
+                    <li><Lightning color="#ed825f" size={28} className="icon"/> <Link to="#skills">Skills</Link></li>
+                    <li><Suitcase color="#ed825f" size={28} className="icon"/> <Link to="#work">Work</Link></li>
+                    <li><Laptop color="#ed825f" size={28} className="icon"/> <a href="http://blog.stephrinehart.com">Blog</a></li>
+                    <li><HouseLine color="#ed825f" size={28} className="icon"/> <Link to="#">Home</Link></li>
                 </ul>
                 </div>
-            <div className="vertical-line2"></div>
             </div>
 
     )
-};
+    };
+
+    export default Sidebar;

@@ -29,9 +29,12 @@ const Content = () => {
   return (
     <div className="content">
       <div className="header">
-        <span className="head">hello world</span>
+        <span className="head">Hello world <span role="img" aria-label="vulcan greeting">🖖🏻</span></span> 
       </div>
-      updog: 
+      <div className="about">
+        I'm Steph, a librarian and web developer based in New England.<br />
+      </div>
+{/* 
       {data.allDatoCmsProjectContent.nodes.map((proj) => {
         return(
         <>
@@ -40,7 +43,7 @@ const Content = () => {
         )
         }
       )
-    }
+    } */}
     </div>           
         );
       }
