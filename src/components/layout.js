@@ -1,5 +1,5 @@
 import React from "react";
-import Sidebar from "../components/sidebar/sidebar";
+import Navbar from "./navbar/navbar";
 import Content from "../components/content/content";
 import "./layout.scss"; 
 
@@ -7,10 +7,10 @@ export default function Layout({ pageMeta, children }) {
     return (
         <>
         <div className="main">
-          <Sidebar />
-          <Content>
+          <Navbar />
+          {/* <Content> */}
             {children}
-          </Content>
+          {/* </Content> */}
         </div>
         </>
     )

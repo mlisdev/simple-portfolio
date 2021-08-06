@@ -32,7 +32,7 @@ const Content = () => {
         <span className="head">Hello world <span role="img" aria-label="vulcan greeting">🖖🏻</span></span> 
       </div>
       <div className="about">
-        I'm Steph, a librarian and web developer based in New England.<br />
+        I'm Steph, a <mark>librarian</mark> and <mark>web developer</mark> based in New England.<br />
       </div>
 {/* 
       {data.allDatoCmsProjectContent.nodes.map((proj) => {
