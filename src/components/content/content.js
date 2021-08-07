@@ -28,7 +28,7 @@ const Content = () => {
 
   return (
     <div className="content">
-      {data.allDatoCmsProjectContent.nodes.map((proj) => {
+      {/* {data.allDatoCmsProjectContent.nodes.map((proj) => {
         return(
         <>
         {proj.title}
@@ -36,7 +36,7 @@ const Content = () => {
         )
         }
       )
-    } 
+    }  */}
     </div>           
         );
       }
