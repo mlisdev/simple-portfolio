@@ -1,8 +1,7 @@
 import React from "react";
 import Navbar from "./navbar/navbar";
-import Header from "../components/header/header"
-import Contact from "../components/contact/contact"
-import Content from "../components/content/content";
+import Header from "../components/header/header"; 
+import About from "../components/about/about"; 
 import "./layout.scss"; 
 
 export default function Layout({ pageMeta, children }) {
@@ -11,11 +10,8 @@ export default function Layout({ pageMeta, children }) {
         <div className="container">
           <Navbar />
           <Header />
-          <Contact />
-          {/* <Navbar /> */}
-          {/* <Content> */}
+          <About />
             {children}
-          {/* </Content> */}
         </div>
         </>
     )
