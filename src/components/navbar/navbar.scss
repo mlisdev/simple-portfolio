@@ -7,12 +7,19 @@
 
 nav { 
     display: flex;
+    flex-wrap: nowrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 90%; 
+    width: 100vw; 
     height: 10%;
     margin: 0 auto; 
+}
+
+@media (max-width: 650px) {
+  nav {
+    flex-wrap: wrap;
+  }
 }
 
 .nav-links ul { 
@@ -52,3 +59,4 @@ a:hover:after {
   width: 100%; 
   left: 0; 
 }
+
