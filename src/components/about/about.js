@@ -9,8 +9,7 @@ const About = () => {
       <div className="about" id="about">
         <div className="about-col" id="about-text">
           <h1>the short : </h1><br />
-          
-
+          I'm a coffee-obsessed, 
       </div>
       <div className="about-col" id="about-photo">
           <center>

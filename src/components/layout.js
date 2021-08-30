@@ -44,7 +44,8 @@ export default function Layout({ pageMeta, children }) {
     
     return (
         <>
-        <div className="container">
+            <div className="container">
+                <div className="background"></div>
           <Navbar />
           <Header />
           <About />
