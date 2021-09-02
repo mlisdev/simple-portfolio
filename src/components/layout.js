@@ -5,7 +5,7 @@ import Header from "../components/header/header";
 import About from "../components/about/about"; 
 import "./layout.scss"; 
 
-export default function Layout({ pageMeta, children }) {
+export default function Layout({ pageMeta, children, data }) {
     const queryData = useStaticQuery(
       graphql`
         query MyQuery {
@@ -48,7 +48,9 @@ export default function Layout({ pageMeta, children }) {
                 <div className="background"></div>
           <Navbar />
           <Header />
-          <About />
+                <About
+                    aboutParagraph={queryData.allDatoCmsAboutPage.nodes[0].aboutText}
+                    aboutImage={queryData.allDatoCmsAboutPage.nodes[0].aboutImg} />
             {children}
         </div>
         </>
