@@ -6,7 +6,7 @@ function Header() {
     return (
         <>
             <div className="header">
-                <div className="header-text">
+                <div className="header-text hvr-grow">
                     Hello world <span role="img" aria-label="vulcan greeting">🖖🏻</span>
             </div>
         <div className="subhead">

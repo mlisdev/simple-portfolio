@@ -5,6 +5,16 @@
   --light: #B2DEDD;
 }
 
+.header-row { 
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 60%; 
+    margin: 0 auto; 
+    padding: 0; 
+}
+
 .about { 
     display: flex;
     flex-direction: row;
@@ -16,8 +26,8 @@
 
 .about-col { 
   width: 30vw; 
-  padding: 20px; 
-  margin: 20px; 
+  padding: 0px 20px; 
+  margin: 0px 20px; 
 }
 
 #about-photo { 

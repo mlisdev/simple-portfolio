@@ -3,6 +3,7 @@ import { useStaticQuery, graphql } from "gatsby";
 import Navbar from "./navbar/navbar";
 import Header from "../components/header/header"; 
 import About from "../components/about/about"; 
+import Skill from "../components/skill/skill"; 
 import "./layout.scss"; 
 
 export default function Layout({ pageMeta, children, data }) {
@@ -56,10 +57,13 @@ export default function Layout({ pageMeta, children, data }) {
                 <div className="background"></div>
           <Navbar />
           <Header />
+            {children}
                 <About
                     aboutParagraph={queryData.allDatoCmsAboutPage.nodes[0].aboutText}
                     aboutImage={queryData.allDatoCmsAboutPage.nodes[0].aboutImg} />
-            {children}
+                <Skill
+                    skillList={queryData.allDatoCmsSkill.nodes}
+                />
         </div>
         </>
     )
