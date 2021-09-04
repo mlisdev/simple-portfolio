@@ -9,36 +9,44 @@ export default function Layout({ pageMeta, children, data }) {
     const queryData = useStaticQuery(
       graphql`
         query MyQuery {
-          allDatoCmsAboutPage {
-              nodes {
-              aboutHeadline
-              aboutText {
-                  value
-              }
-              aboutImg {
-                  gatsbyImageData(placeholder: BLURRED, width: 600, forceBlurhash: false)
-                  alt
-              }
-              }
-          }
-          allDatoCmsProjectContent {
-              nodes {
-              githublink
-              id
-              images {
-                  gatsbyImageData
-              }
-              link
-              technologies {
-                  value
-              }
-              title
-              description {
-                  value
-              }
-              }
+  allDatoCmsAboutPage {
+    nodes {
+      aboutHeadline
+      aboutText {
+        value
       }
+      aboutImg {
+        alt
+        gatsbyImageData(placeholder: BLURRED, width: 600, forceBlurhash: false)
       }
+    }
+  }
+  allDatoCmsProjectContent {
+    nodes {
+      githublink
+      images {
+        alt
+        gatsbyImageData(placeholder: BLURRED, width: 600, forceBlurhash: false)
+      }
+      link
+      title
+      technologies {
+        value
+      }
+      description {
+        value
+      }
+    }
+  }
+  allDatoCmsSkill {
+    nodes {
+      skill
+      category
+      id
+    }
+  }
+}
+
       `
     )
     
