@@ -1,12 +1,15 @@
 import React from "react";
 import "./about.scss";
-import stephanie from "../../images/stephanie.jpg"
+import read from "../../images/read.jpg";
+import kayak from "../../images/kayak.jpg";
+import bike from "../../images/bike.jpg";
 import { StructuredText } from "react-datocms";
 
 const About = ({aboutParagraph, aboutImage}) => {
   const image = aboutImage.gatsbyImageData.images.fallback.src;
   return (
     <>
+      <section classNamee="about-section">
       <div className="header-row" id="about-head">
           <h1>about stephanie</h1>
 
@@ -17,13 +20,28 @@ const About = ({aboutParagraph, aboutImage}) => {
       </div>
       <div className="about-col" id="about-photo">
           <center>
-            <img src={image} className="hvr-grow-rotate" />
+            <img src={image} alt="steph, the site author, with pink hair" />
         </center> 
-      </div>
-      
+        </div>
 
       </div>
-    </>  
+        <div className="photo-grid">
+        <div className="grid-box">
+          <img src={read}
+            alt="laying in a hammock, holding up a book"/>
+        </div>
+        <div className="grid-box">
+          <img src={kayak}
+            alt="feet propped up on the front of a kayak, in the water" />
+        </div>
+        <div className="grid-box">
+          <img src={bike}
+            alt="looking down at feet and a road bike"/>
+        </div>
+        </div>
+        </section>
+      </>
+      
         );
       }
 
