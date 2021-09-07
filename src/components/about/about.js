@@ -9,21 +9,15 @@ const About = ({aboutParagraph, aboutImage}) => {
   const image = aboutImage.gatsbyImageData.images.fallback.src;
   return (
     <>
-      <section className="about-section">
-      <div className="header-row" id="about-head">
+      <section className="about-section"  id="about">
+      <div className="header-row">
           <h1>about stephanie</h1>
 
       </div>
-      <div className="about" id="about">
+      <div className="about">
         <div className="about-col" id="about-text">
-          <StructuredText data={aboutParagraph} />
+          <StructuredText data={ aboutParagraph} />
       </div>
-      {/* <div className="about-col" id="about-photo">
-          <center>
-            <img src={image} alt="steph, the site author, with pink hair" />
-        </center> 
-        </div> */}
-
       </div>
         <div className="photo-grid">
         <div className="grid-box">

@@ -7,7 +7,7 @@ const Skill = ( {skillList} ) => {
   return (
     <section id="skills">
       <div className="skill-box">
-        <h2>skills: library</h2>
+        <h3>skills: library</h3>
       {skillList
         .filter(skill => skill.category === 'library')
         .map((skillList, idx) => {
@@ -19,7 +19,7 @@ const Skill = ( {skillList} ) => {
       })}
       </div>
       <div className="skill-box">
-        <h2>skills: software</h2>
+        <h3>skills: software</h3>
       {skillList
         .filter(skill => skill.category === 'software')
         .map((skillList, idx) => {

@@ -1,0 +1,36 @@
+#work { 
+  background-color: #fff;
+  padding: 20px; 
+}
+
+#work h3 { 
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  color: var(--primary); 
+}
+
+#work h4 { 
+  font-family: 'Montserrat', sans-serif !important;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.project-list { 
+  display: flex; 
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  width: 75%; 
+  margin: 0 auto;
+
+}
+
+.project-box {
+  margin: 30px; 
+  padding: 20px; 
+  width: 100%;  
+  border: 1px solid var(--dark); 
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+
+}

@@ -4,6 +4,7 @@ import Navbar from "./navbar/navbar";
 import Header from "../components/header/header"; 
 import About from "../components/about/about"; 
 import Skill from "../components/skill/skill"; 
+import Project from "../components/project/project"; 
 import "./layout.scss"; 
 
 export default function Layout({ pageMeta, children, data }) {
@@ -22,7 +23,7 @@ export default function Layout({ pageMeta, children, data }) {
       }
     }
   }
-  allDatoCmsProjectContent {
+  allDatoCmsProjectContent(sort: {fields: title, order: ASC}) {
     nodes {
       githublink
       images {
@@ -58,13 +59,17 @@ export default function Layout({ pageMeta, children, data }) {
           <Navbar />
           <Header />
             {children}
-                <About
-                    aboutParagraph={queryData.allDatoCmsAboutPage.nodes[0].aboutText}
-                    aboutImage={queryData.allDatoCmsAboutPage.nodes[0].aboutImg} />
+          <About
+            aboutParagraph={queryData.allDatoCmsAboutPage.nodes[0].aboutText}
+            aboutImage={queryData.allDatoCmsAboutPage.nodes[0].aboutImg} />
                 
-                <Skill
-            skillList={queryData.allDatoCmsSkill.nodes}
-                />
+          <Skill
+            skillList={queryData.allDatoCmsSkill.nodes} />
+          
+          <Project
+            projects={queryData.allDatoCmsProjectContent.nodes}
+            projectImages={queryData.allDatoCmsProjectContent.nodes.images}
+          />
         </div>
         </>
     )

@@ -15,29 +15,29 @@ function Header() {
                 </div>
                 <div className="contact">
                     <a href="http://github.com/mlisdev" target="_blank" rel="noopener noreferrer" aria-label="Github">
-                        <GithubLogo color="#DD7564" weight="duotone" size={32} />
+                        <GithubLogo color="#00473e" weight="duotone" size={32} />
                     </a>
                   &nbsp; &nbsp; 
                     <a href="http://linkedin.com/in/srinehart" target="_blank" rel="noopener noreferrer" aria-label="Linkedin" >
-                        <LinkedinLogo color="#DD7564" weight="duotone" size={32} />
+                        <LinkedinLogo color="#00473e" weight="duotone" size={32} />
                     </a>
                   &nbsp; &nbsp; 
         
                     <a href="http://instagram.com/heyrinehart" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-                        <InstagramLogo color="#DD7564" weight="duotone" size={32} />
+                        <InstagramLogo color="#00473e" weight="duotone" size={32} />
                     </a>
                   &nbsp; &nbsp; 
                    
                     <a href="http://twitter.com/heyrinehart" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
-                        <TwitterLogo color="#DD7564" weight="duotone" size={32} />
+                        <TwitterLogo color="#00473e" weight="duotone" size={32} />
                     </a>
                   &nbsp; &nbsp; 
                     <a href="mailto:hey@stephrinehart.com" target="_blank" rel="noopener noreferrer" aria-label="Email">
-                        <At color="#DD7564" weight="duotone" size={32} />
+                        <At color="#00473e" weight="duotone" size={32} />
                     </a>
                   &nbsp; &nbsp; 
                     <a href="https://open.spotify.com/user/rinehart?si=6EUUv_iYQgmJnegkLyocAg" target="_blank" rel="noopener noreferrer" aria-label="Spotify">
-                        <Headphones color="#DD7564" weight="duotone" size={32} />
+                        <Headphones color="#00473e" weight="duotone" size={32} />
                     </a>
                 </div>
         </div>
