@@ -14,19 +14,31 @@ function Header() {
             I <span className="accent">dance</span> at my standing desk.
                 </div>
                 <div className="contact">
-                    <a href="http://github.com/mlisdev" target="_blank" rel="noopener noreferrer"><GithubLogo color="#DD7564" weight="duotone" size={32} aria-label="github logo" /></a>
+                    <a href="http://github.com/mlisdev" target="_blank" rel="noopener noreferrer" aria-label="Github">
+                        <GithubLogo color="#DD7564" weight="duotone" size={32} />
+                    </a>
                   &nbsp; &nbsp; 
-                  <a href="http://linkedin.com/in/srinehart" target="_blank" rel="noopener noreferrer" ><LinkedinLogo color="#DD7564" weight="duotone" size={32} aria-label="Linkedin logo" /></a>
+                    <a href="http://linkedin.com/in/srinehart" target="_blank" rel="noopener noreferrer" aria-label="Linkedin" >
+                        <LinkedinLogo color="#DD7564" weight="duotone" size={32} />
+                    </a>
                   &nbsp; &nbsp; 
         
-                  <a href="http://instagram.com/heyrinehart" target="_blank" rel="noopener noreferrer" ><InstagramLogo color="#DD7564" weight="duotone" size={32} aria-label="Instagram logo" /></a>
+                    <a href="http://instagram.com/heyrinehart" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                        <InstagramLogo color="#DD7564" weight="duotone" size={32} />
+                    </a>
                   &nbsp; &nbsp; 
                    
-                  <a href="http://twitter.com/heyrinehart" target="_blank" rel="noopener noreferrer"><TwitterLogo color="#DD7564" weight="duotone" size={32} aria-label="Twitter logo" /></a>
+                    <a href="http://twitter.com/heyrinehart" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                        <TwitterLogo color="#DD7564" weight="duotone" size={32} />
+                    </a>
                   &nbsp; &nbsp; 
-                  <a href="mailto:hey@stephrinehart.com" target="_blank" rel="noopener noreferrer"><At color="#DD7564" weight="duotone" size={32} aria-label="At symbol for email" /></a>
+                    <a href="mailto:hey@stephrinehart.com" target="_blank" rel="noopener noreferrer" aria-label="Email">
+                        <At color="#DD7564" weight="duotone" size={32} />
+                    </a>
                   &nbsp; &nbsp; 
-                  <a href="https://open.spotify.com/user/rinehart?si=6EUUv_iYQgmJnegkLyocAg" target="_blank" rel="noopener noreferrer"><Headphones color="#DD7564" weight="duotone" size={32} aria-label="At symbol for email" /></a>
+                    <a href="https://open.spotify.com/user/rinehart?si=6EUUv_iYQgmJnegkLyocAg" target="_blank" rel="noopener noreferrer" aria-label="Spotify">
+                        <Headphones color="#DD7564" weight="duotone" size={32} />
+                    </a>
                 </div>
         </div>
         </>

@@ -2,10 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Halant&family=Montserrat:wght@400;700&family=Satisfy&display=swap');
 
 :root {
-  --main-bg-color: #F0EDE6;
-  --primary: #DD7564; 
-  --dark: #1FA5A6; 
-  --light: #B2DEDD;
+  --main-bg-color: #f2f7f5;
+  --primary: #00473e; 
+  --dark: #fa5246; 
+  --light: #ffa8ba;
 }
 
 * {
@@ -50,20 +50,9 @@ h1, h2, h3, h4, h5, h6 {
   transform: scale(1.1);
 }
 
-.hvr-grow-rotate {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-property: transform;
-  transition-property: transform;
-}
-.hvr-grow-rotate:hover, .hvr-grow-rotate:focus, .hvr-grow-rotate:active {
-  -webkit-transform: scale(1.1) rotate(4deg);
-  transform: scale(1.1) rotate(4deg);
+hr { 
+  width: 90%; 
+  border: 1px solid var(--primary);
 }
 
 @media only screen and (max-width: 900px) {
@@ -80,4 +69,26 @@ h1, h2, h3, h4, h5, h6 {
     width: 90%; 
   }
 
+  .photo-grid {
+    margin: 20px auto; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  }
+
+  .grid-box { 
+    width: 35%; 
+  }
+
+  #skills { 
+    display: flex;
+    flex-direction: column;
+    padding: 0; 
+  }
+
+  .skill-box { 
+    width: 100%; 
+    margin-left: 0; 
+  }
 }

@@ -1,8 +1,6 @@
-:root {
-  --main-bg-color: #F0EDE6;
-  --primary: #DD7564; 
-  --dark: #1FA5A6; 
-  --light: #B2DEDD;
+.about-section { 
+  background-color: #fff;
+  padding: 20px; 
 }
 
 .header-row { 
@@ -25,30 +23,9 @@
 }
 
 .about-col { 
-  width: 30vw; 
+  width: 100vw; 
   padding: 0px 20px; 
   margin: 0px 20px; 
-}
-
-#about-photo { 
-  display: flex; 
-  align-items: center;
-  justify-content: center;
-  padding: 0 !important; 
-  height: 100%; 
-  overflow: hidden;
-}
-
-#about-photo img { 
-  height: 500px; 
-  opacity: .8; 
-  width: 100%; 
-  transition: transform .5s ease;
-}
-
-#about-photo:hover img {
-  transform: scale(1.2);
-  opacity: 1; 
 }
 
 .photo-grid { 
@@ -61,7 +38,7 @@
 }
 
 .grid-box { 
-  width: 30%; 
+  width: 20%; 
   margin: 2px; 
   overflow: hidden;
 }

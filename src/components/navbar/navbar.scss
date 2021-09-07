@@ -1,12 +1,3 @@
-:root {
-  --main-bg-color: #F0EDE6;
-  --primary: #DD7564; 
-  --dark: #1FA5A6; 
-  --light: #B2DEDD;
-}
-
-
-
 nav { 
     display: flex;
     flex: 1; 
@@ -33,6 +24,7 @@ nav {
 
 .nav-links a {
   color: var(--primary);
+  font-weight: bold;
   font-size: 1.2rem;
   text-transform: uppercase;
   text-decoration: none;
