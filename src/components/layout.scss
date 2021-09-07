@@ -29,6 +29,16 @@ h1, h2, h3, h4, h5, h6 {
     text-decoration: underline;
 }
 
+a { 
+  color: var(--dark); 
+  font-weight: 600;
+}
+
+a:hover { 
+  color: var(--main-bg-color); 
+  background-color: var(--dark);
+}
+
 .container { 
   border-top: 15px solid var(--primary); 
   height: 100%; 

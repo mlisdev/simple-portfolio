@@ -1,6 +1,5 @@
 import React from "react";
 import "./skill.scss";
-import { StructuredText } from "react-datocms";
 
 const Skill = ( {skillList} ) => {
   // let category = skillList.category; 

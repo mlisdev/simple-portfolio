@@ -1,8 +1,10 @@
 import React from "react";
 import "./project.scss";
 import { StructuredText } from "react-datocms";
+import GatsbyImage from "gatsby-plugin-image"; 
 
-const Project = ({ projects, projectImages }) => {
+
+const Project = ({ projects }) => {
     return (  
       <section id="work">
         <div className="header-row">
@@ -17,6 +19,14 @@ const Project = ({ projects, projectImages }) => {
                 <StructuredText data={project.description} />
                 <StructuredText data={project.technologies} />
 
+                return (
+                <>
+                  
+                {project.map(images => {
+                   return <GatsbyImage image={images.GatsbyImageData} />
+               })}
+            </>
+    )
               </div>
             )
           })}
