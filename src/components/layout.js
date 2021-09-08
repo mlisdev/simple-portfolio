@@ -29,6 +29,10 @@ export default function Layout({ pageMeta, children, data }) {
       images {
         alt
         gatsbyImageData(placeholder: BLURRED, width: 600, forceBlurhash: false)
+          fluid {
+            src
+            srcSet
+        }
       }
       link
       title
