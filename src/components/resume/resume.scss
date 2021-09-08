@@ -13,15 +13,22 @@
     color: var(--main-bg-color); 
     text-transform: uppercase;
     font-weight: bold;
+    text-decoration: none;
 }
 
 #resume button { 
-    padding: 10px 20px; 
+    padding: 10px 20px;
+    width: 300px;
+    height: 75px;  
     margin: 50px; 
-    background-color: var(--button);
+    background-color: var(--primary);
     color: var(--main-bg-color); 
     text-transform: uppercase;
     font-weight: bold;
     border: 0px; 
     box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+}
+
+#resume button:hover {
+    font-size: .8rem;
 }

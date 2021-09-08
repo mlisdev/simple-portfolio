@@ -20,7 +20,7 @@ const Project = ({ projects }) => {
                   <div className="gallery">
               {project.images.map((image) => {
                 return (
-                  <img src={image.fluid.src} />
+                  <img src={image.fluid.src} alt={image.alt} />
                 )
 
               }
