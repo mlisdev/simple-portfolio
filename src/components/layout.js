@@ -5,6 +5,7 @@ import Header from "../components/header/header";
 import About from "../components/about/about"; 
 import Skill from "../components/skill/skill"; 
 import Project from "../components/project/project"; 
+import Resume from "../components/resume/resume"; 
 import "./layout.scss"; 
 
 export default function Layout({ pageMeta, children, data }) {
@@ -74,6 +75,9 @@ export default function Layout({ pageMeta, children, data }) {
             projects={queryData.allDatoCmsProjectContent.nodes}
             projectImages={queryData.allDatoCmsProjectContent.nodes.images}
           />
+
+          <Resume />
+
         </div>
         </>
     )
