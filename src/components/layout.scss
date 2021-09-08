@@ -102,4 +102,16 @@ hr {
     width: 100%; 
     margin-left: 0; 
   }
+
+  .project-list { 
+    width: 90%; 
+    margin: 0 auto;
+  }
+
+  .project-box img { 
+    width: 100%; 
+    margin: 5px; 
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+}
+
 }

@@ -5,7 +5,6 @@ import GatsbyImage from "gatsby-plugin-image";
 
 
 const Project = ({ projects }) => {
-  console.log({ projects })
   return (
     <section id="work">
       <div className="header-row">
@@ -16,25 +15,18 @@ const Project = ({ projects }) => {
           return (
             <div className="project-box" key={idx}>
               <h3>{project.title}</h3>
-              <br />
-              <StructuredText data={project.description} />
-              <StructuredText data={project.technologies} />
+              <label>Description:</label> <StructuredText data={project.description} />
+              <label>Technologies used:</label> <StructuredText data={project.technologies} />
+                  <div className="gallery">
               {project.images.map((image) => {
                 return (
-                <>
-                    {image.map((img, idx) => {
-                      return (
-                        <div><img key={idx} src={img} /></div>
-                      )
-                    }
-                    )
-                  }
-                </>
+                  <img src={image.fluid.src} />
                 )
 
               }
               )
               }
+                  </div>
             </div>
               )
         })
