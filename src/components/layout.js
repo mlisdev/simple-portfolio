@@ -5,13 +5,13 @@ import Header from "../components/header/header";
 import About from "../components/about/about"; 
 import Skill from "../components/skill/skill"; 
 import Project from "../components/project/project"; 
-import Resume from "../components/resume/resume"; 
+import Footer from "../components/footer/footer"; 
 import "./layout.scss"; 
 
 export default function Layout({ pageMeta, children, data }) {
     const queryData = useStaticQuery(
       graphql`
-        query MyQuery {
+query MyQuery {
   allDatoCmsAboutPage {
     nodes {
       aboutHeadline
@@ -21,18 +21,19 @@ export default function Layout({ pageMeta, children, data }) {
       aboutImg {
         alt
         gatsbyImageData(placeholder: BLURRED, width: 600, forceBlurhash: false)
+        originalId
       }
     }
   }
-  allDatoCmsProjectContent(sort: {fields: title, order: ASC}) {
+  allDatoCmsProjectContent {
     nodes {
       githublink
       images {
         alt
         gatsbyImageData(placeholder: BLURRED, width: 600, forceBlurhash: false)
-          fluid {
-            src
-            srcSet
+        originalId
+        fluid {
+          src
         }
       }
       link
@@ -43,6 +44,8 @@ export default function Layout({ pageMeta, children, data }) {
       description {
         value
       }
+      originalId
+      id
     }
   }
   allDatoCmsSkill {
@@ -71,12 +74,13 @@ export default function Layout({ pageMeta, children, data }) {
           <Skill
             skillList={queryData.allDatoCmsSkill.nodes} />
           
+
           <Project
             projects={queryData.allDatoCmsProjectContent.nodes}
             projectImages={queryData.allDatoCmsProjectContent.nodes.images}
           />
 
-          <Resume />
+          <Footer />
 
         </div>
         </>

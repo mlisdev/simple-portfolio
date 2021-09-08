@@ -13,14 +13,16 @@ const Project = ({ projects }) => {
       <div className="project-list">
         {projects.map((project, idx) => {
           return (
-            <div className="project-box" key={idx}>
+            <div className="project-box" key={project.id}>
               <h3>{project.title}</h3>
-              <label>Description:</label> <StructuredText data={project.description} />
-              <label>Technologies used:</label> <StructuredText data={project.technologies} />
+              <b>Description:</b> <StructuredText data={project.description} />
+              <b>Technologies used:</b> <StructuredText data={project.technologies} />
                   <div className="gallery">
               {project.images.map((image) => {
                 return (
-                  <img src={image.fluid.src} alt={image.alt} />
+                  <img src={image.fluid.src}
+                    alt={image.alt}
+                    key={image.originalId} />
                 )
 
               }

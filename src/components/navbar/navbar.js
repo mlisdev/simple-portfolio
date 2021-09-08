@@ -9,7 +9,6 @@ function navbar() {
             <li><Link to="#about">about</Link></li>
             <li><Link to="#skills">skills</Link></li>
             <li><Link to="#work">work</Link></li>
-            <li><Link to="#resume">resume</Link></li>
             <li><a href="http://blog.stephrinehart.com">blog</a></li>
 
             </ul>

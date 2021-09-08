@@ -9,10 +9,10 @@ const Skill = ( {skillList} ) => {
         <h3>skills: library</h3>
       {skillList
         .filter(skill => skill.category === 'library')
-        .map((skillList, idx) => {
+        .map((skillList) => {
         return (
-          <ul>
-            <li key={idx}>{skillList.skill}</li>
+          <ul key={skillList.id}>
+            <li key={skillList.id}>{skillList.skill}</li>
           </ul>
         )
       })}
@@ -21,10 +21,10 @@ const Skill = ( {skillList} ) => {
         <h3>skills: software</h3>
       {skillList
         .filter(skill => skill.category === 'software')
-        .map((skillList, idx) => {
+        .map((skillList) => {
         return (
-          <ul>
-            <li key={idx}>{skillList.skill}</li>
+          <ul key={skillList.id}>
+            <li key={skillList.id}>{skillList.skill}</li>
           </ul>
         )
       })}

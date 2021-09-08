@@ -14,6 +14,11 @@
     text-transform: uppercase;
     font-weight: bold;
     text-decoration: none;
+    font-size: 1.3rem;
+}
+
+#resume a:hover{ 
+    font-size: 1rem;
 }
 
 #resume button { 
@@ -27,8 +32,4 @@
     font-weight: bold;
     border: 0px; 
     box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
-}
-
-#resume button:hover {
-    font-size: .8rem;
 }

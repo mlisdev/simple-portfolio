@@ -35,8 +35,13 @@ const About = ({aboutParagraph, aboutImage}) => {
         <div className="grid-box">
           <img src={bike}
             alt="looking down at feet and a road bike"/>
+          </div>
         </div>
-        </div>
+        <center>
+            <button>
+                <a href="https://drive.google.com/file/d/1kSqEpv76MC_-Y4ryFqc5ikRcnN2uvydr/view?usp=sharing" target="_blank" rel="noopener noreferrer">View my resume</a>
+            </button>
+            </center>
         </section>
       </>
       
