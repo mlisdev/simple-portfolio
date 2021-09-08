@@ -6,7 +6,8 @@ import About from "../components/about/about";
 import Skill from "../components/skill/skill"; 
 import Project from "../components/project/project"; 
 import Footer from "../components/footer/footer"; 
-import "./layout.scss"; 
+import "./layout.scss";
+import { Helmet } from "react-helmet";
 
 export default function Layout({ pageMeta, children, data }) {
     const queryData = useStaticQuery(
@@ -61,7 +62,22 @@ query MyQuery {
     )
     
     return (
-        <>
+      <>
+        <div className="application">
+        <Helmet>
+        <title>{`Stephanie Rinehart | ${pageMeta.title}`}</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+          <meta name="author" content="Stephanie Rinehart" />
+          <meta property="og:title" content="Stephanie Rinehart | Librarian & Web Developer" />
+          <meta property="og:description" content={pageMeta.description} />
+          <meta property="og:image" content="http://stephrinehart.com/keepthis/social.png" />
+          <meta property="og:url" content="http://stephrinehart.com" />
+          <meta name="twitter:creator" content="@heyrinehart" />
+          <meta name="description" content={pageMeta.description} />
+          <meta name="keywords" content={pageMeta.keywords.join(',')} />
+          
+        </Helmet>
             <div className="container">
                 <div className="background"></div>
           <Navbar />
@@ -82,8 +98,9 @@ query MyQuery {
 
           <Footer />
 
-        </div>
-        </>
+          </div>
+          </div>
+</>
     )
 };
 

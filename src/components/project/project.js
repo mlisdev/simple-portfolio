@@ -1,7 +1,6 @@
 import React from "react";
 import "./project.scss";
-import { StructuredText } from "react-datocms";
-import GatsbyImage from "gatsby-plugin-image"; 
+import { StructuredText } from "react-datocms"; 
 
 
 const Project = ({ projects }) => {
