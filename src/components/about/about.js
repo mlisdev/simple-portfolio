@@ -25,17 +25,17 @@ const About = ({aboutParagraph, aboutImage}) => {
             alt="steph, the site author, with orange hair"/>
         </div>
         <div className="grid-box">
-          <img src={read}
-            alt="laying in a hammock, holding up a book"/>
-        </div>
+          <img src={bike}
+            alt="looking down at feet and a road bike"/>
+          </div>
         <div className="grid-box">
           <img src={kayak}
             alt="feet propped up on the front of a kayak, in the water" />
         </div>
         <div className="grid-box">
-          <img src={bike}
-            alt="looking down at feet and a road bike"/>
-          </div>
+          <img src={read}
+            alt="laying in a hammock, holding up a book"/>
+        </div>
         </div>
         <center>
             <button>

@@ -104,4 +104,10 @@ hr {
     box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
 }
 
+  .project-header { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
 }

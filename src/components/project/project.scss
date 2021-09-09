@@ -25,6 +25,20 @@
   background-color: var(--dark);
 }
 
+.project-header { 
+  display: flex;
+  width: 100%; 
+  justify-content: space-between;
+}
+.project-header a { 
+  color: var(--primary) !important; 
+  font-weight: 600;
+}
+
+.project-header a:hover { 
+  background-color: var(--main-bg-color) !important;
+}
+
 .project-box b { 
   font-weight: bold;
   line-height: 1.5rem;
@@ -62,4 +76,9 @@
   margin: 5px; 
   box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
   border: 1px solid lightgrey; 
+}
+
+.icon {
+  position: relative;
+  top: 4px;
 }
