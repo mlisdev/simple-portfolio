@@ -27,17 +27,8 @@ function Header() {
                         <InstagramLogo color="#00473e" weight="duotone" size={32} />
                     </a>
                   &nbsp; &nbsp; 
-                   
-                    <a href="http://twitter.com/heyrinehart" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
-                        <TwitterLogo color="#00473e" weight="duotone" size={32} />
-                    </a>
-                  &nbsp; &nbsp; 
                     <a href="mailto:hey@stephrinehart.com" target="_blank" rel="noopener noreferrer" aria-label="Email">
                         <At color="#00473e" weight="duotone" size={32} />
-                    </a>
-                  &nbsp; &nbsp; 
-                    <a href="https://open.spotify.com/user/rinehart?si=6EUUv_iYQgmJnegkLyocAg" target="_blank" rel="noopener noreferrer" aria-label="Spotify">
-                        <Headphones color="#00473e" weight="duotone" size={32} />
                     </a>
                 </div>
         </div>
